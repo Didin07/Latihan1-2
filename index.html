@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan Javascript</title>
+</head>
+
+<body>
+    <script>
+        // //Menampilkan hello world
+        // console.log("Hello World!")
+
+        // //Cetak 5 + 3 
+        // console.log(5 + 3);
+
+        // //cetak 20 kurang 8 
+        // console.log(20 - 8);
+
+        // //kelucuan javascript
+        // console.log("2" + "2" - "2");
+
+        // //cetak hasil 8 kali 4 
+        // console.log(8 * 4);
+
+        // //cetak hasil 24 bagi 4 
+        // console.log(24 / 4);
+
+        // //cetak sisa setalah dibagi 7 dengan 2 di console
+        // console.log(7 % 2);
+
+        // //belajar concad 
+        // console.log("pengembangan " + "Aplikasi " + "web");
+        // console.log("20" + "23");
+
+        // //MendekralasikanVariabel
+        // let name = "Tony Stark"
+        // console.log(name)
+
+        // let panjang = 8;
+        // let lebar = 4;
+        // let luasPersegiPanjang = panjang * lebar;
+        // console.log("Luas Persegi panjang: " + luasPersegiPanjang)
+
+        // //memperbaruiVariabel
+        // let nama = "ichsan";
+        // console.log(nama);
+        // nama = "budiman";
+        // console.log(nama);
+
+        // let number = 7;
+        // console.log(number);
+
+        // //tambahkan 3 nilai variabel number
+        // number = number + 3;
+        // console.log(number);
+
+        // //bagi nilai variabel number dengan 2
+        // number = number / 2;
+
+        // console.log(number);
+
+        // const PI = 3.1415595857575;
+        // //dua baris code dibawah akan error 
+
+        // PI = 3.14;
+        // PI = PI + 10;
+
+        // if (kondisi) {
+        //     //baris kode yang akan dijalankan ketika kondisi
+        //     //percabangan terpenuhi
+        // } //tidak diperlukan titik koma ";"
+        // const age = 24;
+        // //cetak hasil dari age >= 18
+        // console.log(age >= 18);
+
+        // //cetak hasil dari age < 18
+        // console.log(age < 18);
+
+        // /*ketika nilai dari age lebih besar atau sama dengan 18 dan cetak "Saya berusia dari 18 tahun"*/
+        // if (age >= 18) {
+        //     console.log("saya berusia lebih dari 18 tahun");
+        // }
+
+        // const password = "motekar";
+        // if (password === "motekar") {
+        //     console.log("berhasil log in");
+        // }
+
+        // if (password !== "motekar") {
+        //     console.log("password salah")
+        // }
+        // for (let number = 1; number <= 5; number++) {
+        //     console.log(number);
+        // }
+
+        // let hewan = ['kuda', 'jerapah', 'kelinci'];
+        // console.log(hewan);
+
+        // const mahasiswa = {
+        //     name: "heru",
+        //     age: 15
+        // };
+        // console.log(mahasiswa, name);
+        // mahasiswa.age = 20;
+        // console.log(mahasiswa);
+
+        const mahasiswa1 = {
+            name: "Heru",
+            age: 20
+        };
+        const mahasiswa2 = {
+            name: "Hendra",
+            age: 15
+        };
+        const listMahasiswa = [mahasiswa1, mahasiswa2];
+
+        //Contoh Penggunaan Array dalam Object
+        for (let i = 0; i < listMahasiswa.length; i++) {
+            console.log(`Nama:  ${listMahasiswa[i].name}`)
+            console.log(`Umur: ${listMahasiswa[i].age}`)
+        }
+
+
+        const cafe = {
+            name: "Cafe Ceria",
+            businessHour: {
+                Open: "10:00",
+                close: "21:00"
+            },
+
+            menu: [
+                "teh", "Kopi", "Es"
+            ]
+        }
+        console.log(`Jam : Dari jam ${cafe.businessHour.Open} sampai jam ${cafe.businessHour.close}`)
+
+        console.log(`Nama: ${cafe.name}`);
+        console.log(`jam dari ${cafe.businessHour.Open}sampai jam ${cafe.businessHour.close}`);
+        console.log("====================")
+        console.log("Menu Rekomendasi");
+        for (let i = 0; i < cafe.menu.length; i++) {
+            console.log()
+        }
+    </script>
+</body>
+
+</html>
